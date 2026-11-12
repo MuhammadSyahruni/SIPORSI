@@ -1,0 +1,36 @@
+
+# Storage logs
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+# Uploaded files
+/public/uploads/*
+!/public/uploads/.gitkeep
+!/public/uploads/.htaccess
+
+# Keep upload security configuration
+!/public/uploads/projects/
+/public/uploads/projects/*
+!/public/uploads/projects/.htaccess
+
+!/public/uploads/achievements/
+/public/uploads/achievements/*
+!/public/uploads/achievements/.htaccess
+
+!/public/uploads/certificates/
+/public/uploads/certificates/*
+!/public/uploads/certificates/.htaccess
+
+# Environment configuration
+.env
+.env.*
+
+# Dependencies
+/vendor/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local database configuration
+/app/config/database.php

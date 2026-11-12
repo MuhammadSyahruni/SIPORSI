@@ -1,0 +1,13 @@
+# SIPORSI - Protect project thumbnail uploads
+
+# Disable directory listing
+Options -Indexes
+
+# Block access to executable files
+<FilesMatch "(?i)\.(php[0-9]?|phtml|phar|pht|cgi|pl|py|sh|shtml)$">
+    Require all denied
+</FilesMatch>
+
+# Remove executable file handlers
+RemoveHandler .php .php3 .php4 .php5 .php7 .php8 .phtml .phar .pht
+RemoveType .php .php3 .php4 .php5 .php7 .php8 .phtml .phar .pht

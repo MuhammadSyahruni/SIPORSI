@@ -1,0 +1,11 @@
+
+# Blokir akses langsung ke seluruh file sertifikat.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+# Kompatibilitas Apache versi lama.
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
